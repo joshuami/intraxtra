@@ -1,0 +1,29 @@
+uuid: 8c6cf9e0-611f-4e00-ae23-c1da41d3347f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.notification.body
+    - field.field.node.notification.field_group
+    - node.type.notification
+  module:
+    - text
+    - user
+id: node.notification.teaser
+targetEntityType: node
+bundle: notification
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_group: true
+  links: true
+  published_at: true

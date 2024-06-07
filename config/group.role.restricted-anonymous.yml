@@ -1,0 +1,15 @@
+uuid: 3458e61a-7fcf-4a86-ae72-4f0a6ac3b08c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - user.role.anonymous
+id: restricted-anonymous
+label: Anonymous
+weight: -102
+admin: false
+scope: outsider
+global_role: anonymous
+group_type: restricted
+permissions: {  }

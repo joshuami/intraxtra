@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Template for a content teaser.
+ *
+ * @see template_preprocess_node()
+ */
+#}
+
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  view_mode|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'card',
+  'mb-3',
+]
+%}
+<article{{attributes.addClass(classes)}}>
+	<div class="card-body">
+		<header>
+			{{ title_prefix }}
+			{% if label and not page %}
+				<div class="node__top-wrapper">
+					{{ content.field_image }}
+					<h2 class="h3">
+						<a href="{{ url }}" class="stretched-link" rel="bookmark">{{ label }}</a>
+					</h2>
+				</div>
+			{% endif %}
+			{{ title_suffix }}
+			{% if display_submitted %}
+				<div class="node__meta">
+					<span{{author_attributes}}>
+						{{ 'By'|t }}
+						{% apply spaceless %}<span class="node__author">{{ author_name }}</span>
+						{% endapply %},
+						{{ date }}
+					</span>
+					{{ metadata }}
+				</div>
+			{% endif %}
+		</header>
+		<div{{content_attributes.addClass('node__content')}}>
+			{{ content|without('field_image', 'links') }}
+		</div>
+	</div>
+</article>

@@ -1,0 +1,18 @@
+uuid: 550a0036-88f0-4732-837a-da80466daaf0
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - media.type.document
+  module:
+    - groupmedia
+    - media
+id: restricted-group_media-document
+group_type: restricted
+content_plugin: 'group_media:document'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false
+  tracking_enabled: 0

@@ -1,0 +1,32 @@
+uuid: 8bea4a48-d833-48a4-8943-22aeb3d81512
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group.restricted.field_group_path
+    - group.type.restricted
+id: group.restricted.default
+targetEntityType: group
+bundle: restricted
+mode: default
+content:
+  field_group_path:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+  label:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: -5
+    region: content
+hidden:
+  changed: true
+  created: true
+  uid: true

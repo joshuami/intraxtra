@@ -1,0 +1,59 @@
+name: intraxtra
+recipe: pantheon
+config:
+  framework: drupal8
+  site: intraxtra
+  id: 058b5523-7acd-442c-ad0e-abd0faff252f
+  edge: false
+  xdebug: false
+tooling:
+  blt:
+    service: appserver
+    cmd: /app/vendor/bin/blt
+  npm:
+    description: Run npm commands
+    service: node
+    cmd: npm -C /app/web/themes/custom/xtra
+  radix:
+    description: Run radix cli
+    service: node
+    cmd: drupal-radix-cli
+    dir: /app/web/themes/custom/xtra
+  node:
+    description: Run node commands
+    service: node
+  drush:
+    description: Run drush commands
+    service: appserver
+    cmd: drush --root=/app/web
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for nginx.
+    user: root
+    cmd: docker-php-ext-enable xdebug && pkill -o -USR2 php-fpm && echo "Enabling xdebug"
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug for nginx.
+    user: root
+    cmd: rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && pkill -o -USR2 php-fpm && echo "Disabling xdebug"
+  build:
+    description: Build the production theme.
+    service: node
+    cmd: npm -C /app/web/themes/custom/xtra run production
+  watch:
+    description: Build the production theme.
+    service: node
+    cmd: echo "Visit http://intraxtra.lndo.site once building is complete." && npm -C /app/web/themes/custom/xtra run watch
+services:
+  appserver:
+    overrides:
+      environment:
+        DRUSH_OPTIONS_URI: "https://intraxtra.lndo.site"
+  node:
+    type: node:20
+    ssl: true
+    build:
+      - "cd /app/web/themes/custom/xtra && npm install"
+      - "cd /app/web/themes/custom/xtra && npm install drupal-radix-cli"
+      - "cd /app/web/themes/custom/xtra && npm run production"
+    port: 3000

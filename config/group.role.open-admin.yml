@@ -1,0 +1,14 @@
+uuid: 65966fc8-243f-4616-b0bd-7043c77b142d
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+id: open-admin
+label: Admin
+weight: -5
+admin: true
+scope: individual
+global_role: null
+group_type: open
+permissions: {  }

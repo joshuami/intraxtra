@@ -1,0 +1,25 @@
+uuid: b712399e-e3d7-4e3f-a55e-6859e849ccfe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.alert.body
+    - node.type.alert
+  module:
+    - text
+    - user
+id: node.alert.default
+targetEntityType: node
+bundle: alert
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  links: true
+  published_at: true

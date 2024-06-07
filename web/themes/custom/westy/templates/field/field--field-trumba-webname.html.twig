@@ -1,0 +1,61 @@
+{% embed 'field.html.twig' %}
+{% block content %}
+
+  {%- for item in items  -%}
+  {% if item.content|render|striptags|trim is not empty %}
+  <div class="featured-calendar">
+    {% set trumba_webname = item.content["#context"].value %}
+    {{ drupal_view('trumba_spuds', 'default', nid) }}
+    <script type="text/javascript" src="//www.trumba.com/scripts/spuds.js"></script>
+
+
+    <script type="text/javascript">
+      if (document.getElementById("searchlabeledDiv")) {
+        $Trumba.addSpud({
+          webName: "{{ trumba_webname }}",
+          spudType: "searchlabeled",
+          spudId: "searchlabeledDiv"
+        });
+      }
+
+      if (document.getElementById("monthlistDiv")) {
+        $Trumba.addSpud({
+          webName: "{{ trumba_webname }}",
+          spudType: "monthlist",
+          spudId: "monthlistDiv"
+        });
+      }
+
+      if (document.getElementById("filterDiv")) {
+        $Trumba.addSpud({
+          webName: "{{ trumba_webname }}",
+          spudType: "filter",
+          spudId: "filterDiv"
+        });
+      }
+
+      if (document.getElementById("tabchooserDiv")) {
+        $Trumba.addSpud({
+          webName: "{{ trumba_webname }}",
+          spudType: "tabchooser",
+          spudId: "tabchooserDiv"
+        });
+      }
+    </script>
+
+    <div class="calendar-body">
+      <script type="text/javascript">
+        $Trumba.addSpud({
+          webName: "{{ trumba_webname }}",
+          spudType: "main"
+        });
+      </script>
+    </div>
+
+
+  </div>
+  {% endif %}
+  {%- endfor -%}
+
+{% endblock %}
+{% endembed %}

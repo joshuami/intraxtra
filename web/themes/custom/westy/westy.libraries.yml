@@ -1,0 +1,13 @@
+style:
+  version: 02.22.24
+  css:
+    theme:
+      dist/westy.bundle.css:
+        minified: true
+  js:
+    dist/westy.bundle.js:
+      minified: true
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/once

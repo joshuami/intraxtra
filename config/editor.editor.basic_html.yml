@@ -1,0 +1,57 @@
+uuid: 5cf410d1-9ae3-422a-a939-20c7ece7743d
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - ckeditor5
+format: basic_html
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - style
+      - bold
+      - italic
+      - blockQuote
+      - horizontalLine
+      - '|'
+      - link
+      - drupalMedia
+      - '|'
+      - bulletedList
+      - numberedList
+      - insertTable
+      - '|'
+      - textPartLanguage
+      - specialCharacters
+      - '|'
+      - sourceEditing
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+    ckeditor5_language:
+      language_list: un
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+    ckeditor5_sourceEditing:
+      allowed_tags:
+        - '<span lang>'
+        - '<p lang dir>'
+        - '<div lang dir>'
+    ckeditor5_style:
+      styles:
+        -
+          label: 'Button Primary'
+          element: '<a class="btn btn-primary">'
+    media_media:
+      allow_view_mode_override: false
+image_upload: {  }

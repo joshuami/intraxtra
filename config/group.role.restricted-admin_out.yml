@@ -1,0 +1,15 @@
+uuid: f99fdf00-a332-450c-8135-302c3badd304
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - user.role.administrator
+id: restricted-admin_out
+label: Administrator
+weight: 101
+admin: true
+scope: outsider
+global_role: administrator
+group_type: restricted
+permissions: {  }

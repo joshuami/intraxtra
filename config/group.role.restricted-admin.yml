@@ -1,0 +1,14 @@
+uuid: dae5da1a-e5d8-45d9-8eb9-0b1a20e8389b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+id: restricted-admin
+label: Admin
+weight: 100
+admin: true
+scope: individual
+global_role: null
+group_type: restricted
+permissions: {  }

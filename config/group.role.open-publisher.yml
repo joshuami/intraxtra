@@ -1,0 +1,15 @@
+uuid: 64fe91c9-1115-455d-baec-30488a2c84b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+    - user.role.publisher
+id: open-publisher
+label: Publisher
+weight: -6
+admin: false
+scope: insider
+global_role: publisher
+group_type: open
+permissions: {  }

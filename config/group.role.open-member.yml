@@ -1,0 +1,15 @@
+uuid: 72353af0-831f-427e-8ff8-4cc741b00436
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+    - user.role.authenticated
+id: open-member
+label: Member
+weight: -8
+admin: false
+scope: insider
+global_role: authenticated
+group_type: open
+permissions: {  }

@@ -1,0 +1,12 @@
+uuid: 68aa86fd-41bd-42a1-bc0e-7d72c57ea62e
+langcode: en
+status: true
+dependencies: {  }
+id: open
+label: Open
+description: 'Open groups can be viewed and joined by anyone in the organization.'
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - open-admin

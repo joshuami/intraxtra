@@ -1,0 +1,17 @@
+uuid: 3e151ae6-3495-4c2c-a9e1-3ac3d0be263c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - node.type.notification
+  module:
+    - gnode
+    - node
+id: restricted-fa2b2639696b3e5a7435f
+group_type: restricted
+content_plugin: 'group_node:notification'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

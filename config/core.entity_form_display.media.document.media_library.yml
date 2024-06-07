@@ -1,0 +1,33 @@
+uuid: 9ffcdafc-5398-4d3a-8e59-4731493ceaee
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.document.field_file_size
+    - field.field.media.document.field_group
+    - field.field.media.document.field_media_file
+    - field.field.media.document.field_mime_type
+    - field.field.media.document.field_show_media_in_library
+    - media.type.document
+id: media.document.media_library
+targetEntityType: media
+bundle: document
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_file_size: true
+  field_group: true
+  field_media_file: true
+  field_mime_type: true
+  field_show_media_in_library: true
+  name: true
+  path: true
+  publish_on: true
+  publish_state: true
+  scheduler_settings: true
+  status: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true

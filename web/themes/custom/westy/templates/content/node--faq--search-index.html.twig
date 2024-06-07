@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Template for FAQs rendered by search.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  view_mode|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'card',
+  'my-3',
+]
+%}
+{%
+  set title_classes = [
+  'h3',
+  'fw-normal',
+]
+%}
+{% set rendered_group = content.field_group|render %}
+<article{{ attributes.addClass(classes) }}>
+  <div class="card-body">
+    <h2{{ title_attributes.addClass(title_classes) }}>
+      {{ label }}
+    </h2>
+    <div class="excerpt mb-2">
+      {{ content|without('field_type','field_group') }}
+    </div>
+    <div class="badge-list">
+      <span class="badge bg-warning me-2 my-2">Frequently Asked Question</span>
+      {% if rendered_group|trim %}
+        <span class="badge bg-warning text-wrap me-2 my-2">{{ content.field_group.0 }}</span>
+      {% endif %}
+    </div>
+  </div>
+</article>

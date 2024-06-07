@@ -1,0 +1,15 @@
+uuid: e85767ce-0b4f-4a90-b90a-3c089c7f969b
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+  module:
+    - user
+id: open-group_membership
+group_type: open
+content_plugin: group_membership
+plugin_config:
+  group_cardinality: 0
+  entity_cardinality: 1
+  use_creation_wizard: false

@@ -1,0 +1,15 @@
+uuid: 3cf16b27-bdb9-4486-8ba9-c67eb9e43ee8
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+    - user.role.contributor
+id: open-contributor
+label: Contributor
+weight: -7
+admin: false
+scope: insider
+global_role: contributor
+group_type: open
+permissions: {  }

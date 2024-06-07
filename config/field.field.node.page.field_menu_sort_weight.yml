@@ -1,0 +1,25 @@
+uuid: 35012fd7-7994-4566-a37b-f998fed0a18f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menu_sort_weight
+    - node.type.page
+id: node.page.field_menu_sort_weight
+field_name: field_menu_sort_weight
+entity_type: node
+bundle: page
+label: 'Menu sort weight'
+description: 'Sort weight defaults to 0. Smaller numbers (or negative numbers) will appear before larger numbers. Pages with a default sort weight will appear alphabetically.'
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,17 @@
+uuid: 69fc10c9-cad7-4591-a5cc-abf2d845e535
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - node.type.post
+  module:
+    - gnode
+    - node
+id: restricted-group_node-post
+group_type: restricted
+content_plugin: 'group_node:post'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

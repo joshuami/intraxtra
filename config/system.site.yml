@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
+langcode: en
+uuid: 999f5e33-2bcb-49d0-a788-815899d416bf
+name: Intraxtra
+mail: josh@m6l.co
+slogan: 'A demonstration of a collaborative platform for intranets and extranets.'
+page:
+  403: ''
+  404: ''
+  front: /front
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

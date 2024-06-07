@@ -1,0 +1,34 @@
+uuid: cc4a466a-1b42-4994-8da9-f384324d27e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.notification.body
+    - field.field.node.notification.field_group
+    - node.type.notification
+  module:
+    - text
+    - user
+id: node.notification.default
+targetEntityType: node
+bundle: notification
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_group:
+    type: entity_reference_label
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden:
+  links: true
+  published_at: true

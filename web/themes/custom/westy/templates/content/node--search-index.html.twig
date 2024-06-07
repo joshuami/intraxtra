@@ -1,0 +1,69 @@
+{#
+/**
+ * @file
+ * Template for content rendered by search.
+ */
+#}
+{%
+  set classes = [
+  'node',
+  node.isPromoted() ? 'node--promoted',
+  node.isSticky() ? 'node--sticky',
+  not node.isPublished() ? 'node--unpublished',
+  node.bundle|clean_class,
+  view_mode|clean_class,
+  node.bundle|clean_class ~ '--' ~ view_mode|clean_class,
+  'card',
+  'my-3',
+  'position-relative',
+]
+%}
+{%
+  set title_classes = [
+  'h3'
+]
+%}
+{% set rendered_type = content.field_type|render %}
+{% set rendered_group = content.field_group|render %}
+{% set rendered_service_type = content.field_service_type|render %}
+<article{{ attributes.addClass(classes) }}>
+  <div class="row g-0">
+      {% if node.bundle == "news" %}
+        {% if content.field_featured_image|render %}
+          <div class="col-md-4 order-md-2 p-0 p-md-3 d-flex align-items-center justify-content-center">
+            {{ content.field_featured_image }}
+          </div>
+        {% else %}
+          <div class="col-md-4 order-md-2 p-0 bg-light d-flex align-items-center justify-content-center">
+            <img src="/themes/custom/westy/assets/images/newspaper-thin.svg" class="w-50 d-none d-md-block m-3" alt="...">
+          </div>
+        {% endif %}
+      {% endif %}
+		<div class="col">
+      <div class="card-body">
+        <h2{{ title_attributes.addClass(title_classes) }}>
+          <a href="{{ url }}" class="stretched-link {{ node.bundle|clean_class }}">{{ label }}</a>
+        </h2>
+        <div class="mb-2">
+          {{ content|without('search_api_excerpt','field_updated_on','field_type','field_group','field_service_type','field_resource_url','field_featured_image') }}
+        </div>
+        {% if content.search_api_excerpt %}
+          {# Page is the only content type that outputs search excerpt at this time. #}
+          <div class="excerpt mb-2">
+            {{ content.search_api_excerpt }}
+          </div>
+        {% endif %}
+        <div class="badge-list">
+          {% if rendered_type|trim %}
+            <span class="badge bg-warning text-wrap me-2 my-3">{{ content.field_type.0 }}</span>
+          {% endif %}
+          {% if rendered_group|trim %}
+            <span class="badge bg-warning text-wrap me-2 my-3">{{ content.field_group.0 }}</span>
+          {% endif %}
+          {% if rendered_service_type|trim %}
+            <span class="badge bg-warning text-wrap me-2 my-3">{{ content.field_service_type.0 }}</span>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+</article>

@@ -1,0 +1,117 @@
+{#
+/**
+  * @file
+  * Template for the main page.
+  */
+#}
+
+{% set url = url('<current>') %}
+
+{% if (node.bundle == "group") or ('/search' in url|render|render) %}
+  {%
+    set header_classes = [
+    'container-fluid',
+    'bg-faded-blue',
+    ]
+  %}
+{% else %}
+  {%
+    set header_classes = [
+    'container-fluid',
+    'border-bottom',
+    'border-2'
+    ]
+  %}
+{% endif %}
+
+<header class="page__header">
+  {% block alerts %}
+    {% if page.alerts %}
+      {{ page.alerts }}
+    {% endif %}
+  {% endblock %}
+
+  <div class="container-fluid p-0">
+    <div class="container nav-container">
+      <div class="row align-items-end">
+        <!-- Left/Bottom Nav -->
+        <div id="nav-container-left" class="col-12 col-lg-3 text-center text-lg-start py-4 my-auto order-2 order-lg-1">
+          {% block left %}
+            {{ page.navbar_left }}
+          {% endblock %}
+        </div>
+        <!-- Right/Top Nav -->
+        <div id="nav-container-right" class="col-12 col-lg-9 text-lg-end order-1 order-lg-2">
+          <div class="row align-items-center">
+            {% block right %}
+              {{ page.navbar_right }}
+            {% endblock %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main id="main-content">
+  <div class="container-fluid bg-faded-gray">
+    <div class="container">
+      {{ page.pre_header }}
+    </div>
+  </div>
+  {% if page.header|render|striptags|trim is not empty %}
+  <div {{ attributes.addClass(header_classes) }}>
+      <div class="container">
+          <div class="row align-items-center">
+            {% if page.featured_image|render is not empty %}
+              <div class="col py-4">
+                <header class="page__sub_header">
+                  {{ page.header }}
+                </header>
+              </div>
+              <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                {{ page.featured_image }}
+              </div>
+            {% else %}
+              <div class="col-12 col-lg-9 py-5">
+                <header class="page__sub_header">
+                  {{ page.header }}
+                </header>
+              </div>
+            {% endif %}
+          </div>
+      </div>
+    </div>
+  {% endif %}
+
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row my-5">
+        {% if page.menu|render|striptags|trim is not empty %}
+          <div id="menu" class="page__menu col-lg-3 col-md-3 col-sm-12">
+            {{ page.menu }}
+          </div>
+        {% endif %}
+          <div id="content" class="page__content col">
+              {{ page.content }}
+          </div>
+        <div id="side" class="page__side col-lg-3 col-md-12 col-sm-12 mt-5 mt-lg-0">
+          <div class="sticky-side">
+            {{ page.side }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% if page.content_bottom|render|striptags|trim is not empty %}
+  <div class="page__content_bottom col container-fluid py-5 bg-faded-blue">
+    <div class="container">
+      {{ page.content_bottom }}
+    </div>
+  </div>
+  {% endif %}
+</main>
+<footer class="page__footer">
+  <div class="container-fluid py-5 bg-primary page__footer__blocks">
+    {{ page.footer }}
+  </div>
+</footer>

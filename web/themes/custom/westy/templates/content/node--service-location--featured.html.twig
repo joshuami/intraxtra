@@ -1,0 +1,23 @@
+{% if content.field_short_title %}
+{% set title = content.field_short_title %}
+{% else %}
+{% set title = label %}
+{% endif %}
+{% set rendered_featured_image = content.field_featured_image|render %}
+
+<div class="card border-2 rounded-0 h-100">
+  {% if rendered_featured_image|trim %}
+    {{ content.field_featured_image }}
+  {% else %}
+    <div class="featured-image w-100 bg-faded-gray text-center" style="padding:12%;">
+      <img src="/themes/custom/westy/assets/images/location-dot-light.svg" class="img-fluid w-25" alt="...">
+    </div>
+  {% endif %}
+  <div class="card-body">
+    <h3 class="card-title h5">{{ title }}</h3>
+    <div class="card-text">
+      {{ content|without('field_short_title','field_featured_image') }}
+      <p class="more-link"><a href="{{ url }}" class="stretched-link">Hours and directions<i class="gg-arrow-right ms-2"></i></a></p>
+    </div>
+  </div>
+</div>

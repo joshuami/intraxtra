@@ -1,0 +1,17 @@
+uuid: 08eea765-d1f4-4964-a1f8-ed9649d9dbf4
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - node.type.event
+  module:
+    - gnode
+    - node
+id: restricted-group_node-event
+group_type: restricted
+content_plugin: 'group_node:event'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

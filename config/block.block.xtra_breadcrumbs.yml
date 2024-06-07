@@ -1,0 +1,24 @@
+uuid: 9ad12e60-de8b-4837-b88b-df0ae30373a9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xtra
+id: xtra_breadcrumbs
+theme: xtra
+region: header
+weight: -4
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

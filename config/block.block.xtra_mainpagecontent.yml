@@ -1,0 +1,20 @@
+uuid: 45810d7e-ea97-4cfe-a4e1-4596a73e8c7c
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - xtra
+id: xtra_mainpagecontent
+theme: xtra
+region: content
+weight: -4
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

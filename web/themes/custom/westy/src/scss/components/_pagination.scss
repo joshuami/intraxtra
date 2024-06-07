@@ -1,0 +1,10 @@
+.pagination {
+    flex-wrap: wrap;
+    border: 0;
+    display: inline-flex;
+
+  .page-item .page-link {
+    border-radius: 1 !important;
+    border-color: $secondary !important;
+  }
+}

@@ -1,0 +1,43 @@
+uuid: a7965df7-b7c2-4a8f-ae5e-38c091471b20
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.page.body
+    - field.field.node.page.field_group
+    - field.field.node.page.field_menu_sort_weight
+    - field.field.node.page.field_parent
+    - field.field.node.page.field_short_title
+    - field.field.node.page.field_show_in_menu
+    - field.field.node.page.field_summary
+    - node.type.page
+  module:
+    - user
+id: node.page.teaser
+targetEntityType: node
+bundle: page
+mode: teaser
+content:
+  content_moderation_control:
+    settings: {  }
+    third_party_settings: {  }
+    weight: -20
+    region: content
+  field_summary:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_group: true
+  field_menu_sort_weight: true
+  field_parent: true
+  field_short_title: true
+  field_show_in_menu: true
+  links: true
+  published_at: true
+  toc_js: true

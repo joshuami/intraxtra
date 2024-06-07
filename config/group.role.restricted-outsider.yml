@@ -1,0 +1,15 @@
+uuid: 6ad61bfc-fe42-4b3a-95ef-c9d14c639918
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - user.role.authenticated
+id: restricted-outsider
+label: Outsider
+weight: -101
+admin: false
+scope: outsider
+global_role: authenticated
+group_type: restricted
+permissions: {  }

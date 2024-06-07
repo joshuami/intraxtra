@@ -1,0 +1,17 @@
+uuid: 78a48980-cb12-477e-bd3d-fa84cee7965a
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - node.type.page
+  module:
+    - gnode
+    - node
+id: restricted-group_node-page
+group_type: restricted
+content_plugin: 'group_node:page'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

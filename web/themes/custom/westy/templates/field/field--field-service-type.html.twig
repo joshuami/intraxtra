@@ -1,0 +1,8 @@
+{% if items[0].content|render|striptags|trim is not empty %}
+{% set type = items[0]['content']['#plain_text'] %}
+
+<span class="icon-circle">
+  <i class="fal fa-{{ servicetypeString(type) }}"></i>
+</span>
+
+{% endif %}

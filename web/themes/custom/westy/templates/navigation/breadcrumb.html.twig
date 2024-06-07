@@ -1,0 +1,34 @@
+{#
+/**
+ * @file
+ * Template for a Breadcrumb component.
+ *
+ * Available config:
+ * - utility_classes: An array of utility classes.
+ */
+#}
+
+{% if breadcrumb %}
+<nav aria-label="breadcrumb" class="{{ utility_classes|join(' ') }}">
+  <ol class="breadcrumb">
+  {% set total = breadcrumb|length %}
+    {% for item in breadcrumb %}
+      {% set hidden = (total > 3) and (loop.index != total and loop.index != total - 1) %}
+
+        {% if (total > 3) and (loop.index == 1) %}
+          <li class="breadcrumb-item">
+            <a id="expand-breadcrumb" title="Click to expand breadcrumbs" href="#">...</a>
+          </li>
+        {% endif %}
+          <li class="breadcrumb-item {{ not item.url ? 'active' }} {{ hidden ? 'hidden' }}">
+            {% if item.url %}
+            <a href="{{ item.url }}">{{ item.text }}</a>
+            {% else %}
+            {{ item.text }}
+            {% endif %}
+          </li>
+
+    {% endfor %}
+  </ol>
+</nav>
+{% endif %}

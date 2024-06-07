@@ -1,0 +1,15 @@
+uuid: fea1de97-af8c-49e8-b1b6-562a35966ba0
+langcode: en
+status: true
+dependencies: {  }
+id: year
+label: Year
+date_format: 'Y'
+time_format: ''
+time_hour_format: ''
+allday_label: ''
+separator: ''
+join: ''
+ampm_reduce: '0'
+date_first: '1'
+site_time_toggle: '0'

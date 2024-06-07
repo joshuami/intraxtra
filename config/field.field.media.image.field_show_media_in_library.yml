@@ -1,0 +1,21 @@
+uuid: 4acf8ff4-d7ee-40fa-9b77-b7c8b75980f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_show_media_in_library
+    - media.type.image
+id: media.image.field_show_media_in_library
+field_name: field_show_media_in_library
+entity_type: media
+bundle: image
+label: 'Show in media library'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

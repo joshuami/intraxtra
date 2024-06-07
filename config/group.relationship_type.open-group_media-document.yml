@@ -1,0 +1,18 @@
+uuid: 91298721-69d6-4844-99d7-08129654bf71
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+    - media.type.document
+  module:
+    - groupmedia
+    - media
+id: open-group_media-document
+group_type: open
+content_plugin: 'group_media:document'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false
+  tracking_enabled: 1

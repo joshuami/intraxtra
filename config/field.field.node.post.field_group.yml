@@ -1,0 +1,31 @@
+uuid: d6334033-1be0-40e7-8174-6d236d10d982
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_group
+    - group.type.open
+    - group.type.restricted
+    - node.type.post
+id: node.post.field_group
+field_name: field_group
+entity_type: node
+bundle: post
+label: 'Displayed in'
+description: 'Choose the group for this content.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles:
+      open: open
+      restricted: restricted
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: open
+field_type: entity_reference

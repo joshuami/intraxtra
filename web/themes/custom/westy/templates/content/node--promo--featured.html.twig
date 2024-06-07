@@ -1,0 +1,13 @@
+<div class="homepage-promo card border-0">
+    {{ content.field_featured_image }}
+    <div class="card-body p-4">
+      <h2 class="h3 card-title">{{ label }}</h3>
+      <p class="card-text fw-bold">{{ content|without('field_summary','field_placement','field_featured_image','field_resource_url') }}</p>
+      <p class="card-text">{{ content.field_summary }}</p>
+      <p class="card-text more-link">
+        <a href="{{ url }}" class="stretched-link promo">Learn more</a>
+        <i class="gg-arrow-right"></i>
+      </p>
+    </div>
+</div>
+

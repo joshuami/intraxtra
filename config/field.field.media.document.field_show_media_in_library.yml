@@ -1,0 +1,21 @@
+uuid: 9a1ff1c2-fcae-4b7a-9813-d8d05857d47d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_show_media_in_library
+    - media.type.document
+id: media.document.field_show_media_in_library
+field_name: field_show_media_in_library
+entity_type: media
+bundle: document
+label: 'Show in media library'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

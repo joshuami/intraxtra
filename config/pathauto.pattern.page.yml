@@ -1,0 +1,22 @@
+uuid: 40910ac6-4d63-4cf2-a603-8eac5138f0f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: page
+label: Page
+type: 'canonical_entities:node'
+pattern: '[node:field_group:0:entity:field_group_path]/[node:field_parent:entity:field_parent:entity:field_parent:entity:field_short_title]/[node:field_parent:entity:field_parent:entity:field_short_title]/[node:field_parent:entity:field_short_title]/[node:field_short_title]'
+selection_criteria:
+  dedd97d8-96d0-4c37-94d8-ea77286cc91d:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: dedd97d8-96d0-4c37-94d8-ea77286cc91d
+    context_mapping:
+      node: node
+    bundles:
+      page: page
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -1,0 +1,21 @@
+uuid: 753bb445-01c6-49f6-bc21-276a42cb81de
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - xtra
+id: xtra_searchform
+theme: xtra
+region: navbar_right
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: df4bcba4-ef10-4c66-914f-9537563c08bf
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_menu_sort_weight
+field_name: field_menu_sort_weight
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

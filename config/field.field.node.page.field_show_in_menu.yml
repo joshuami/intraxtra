@@ -1,0 +1,21 @@
+uuid: 34b8cc5f-f2f5-41ad-b5e3-ccff1b86c4eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_show_in_menu
+    - node.type.page
+id: node.page.field_show_in_menu
+field_name: field_show_in_menu
+entity_type: node
+bundle: page
+label: 'Show in menu'
+description: "<strong>Show this page in its group's menu</strong>. Add a <strong>parent</strong> to have it appear under that content."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

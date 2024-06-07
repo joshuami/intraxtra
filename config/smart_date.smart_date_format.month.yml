@@ -1,0 +1,15 @@
+uuid: ea69e6df-48d4-41aa-a02f-27898d054bf6
+langcode: en
+status: true
+dependencies: {  }
+id: month
+label: Month
+date_format: 'n'
+time_format: ''
+time_hour_format: ''
+allday_label: ''
+separator: ''
+join: ''
+ampm_reduce: '0'
+date_first: '1'
+site_time_toggle: '0'

@@ -1,0 +1,52 @@
+uuid: 1518d917-ea5c-44b7-b5c2-c672ebe4da7d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.nested
+    - field.field.node.page.body
+    - field.field.node.page.field_group
+    - field.field.node.page.field_menu_sort_weight
+    - field.field.node.page.field_parent
+    - field.field.node.page.field_short_title
+    - field.field.node.page.field_show_in_menu
+    - field.field.node.page.field_summary
+    - node.type.page
+  module:
+    - user
+id: node.page.nested
+targetEntityType: node
+bundle: page
+mode: nested
+content:
+  field_parent:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_short_title:
+    type: string
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  group_menu_eva_nested_menu:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  body: true
+  content_moderation_control: true
+  field_group: true
+  field_menu_sort_weight: true
+  field_show_in_menu: true
+  field_summary: true
+  links: true
+  published_at: true
+  toc_js: true

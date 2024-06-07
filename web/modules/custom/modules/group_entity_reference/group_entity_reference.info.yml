@@ -1,0 +1,8 @@
+name: Group Entity Reference
+description: Synchronizes a group entity reference field to group relationships.
+package: Custom
+type: module
+version: 0.1
+core_version_requirement: ^10 || ^11
+dependencies:
+  - 'group'

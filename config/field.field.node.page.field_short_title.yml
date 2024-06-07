@@ -1,0 +1,19 @@
+uuid: 755a49b2-538b-4f34-890b-1b8f1bb40d08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_short_title
+    - node.type.page
+id: node.page.field_short_title
+field_name: field_short_title
+entity_type: node
+bundle: page
+label: 'Short title'
+description: 'Short titles are used for menu text, featured cards, and path aliases to create web addresses.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 4afeb807-8de6-4728-8f4b-d03b35b6ed0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.group_menu
+  module:
+    - views
+  theme:
+    - xtra
+id: xtra_views_block__group_menu_block_siblings_page_menu
+theme: xtra
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:group_menu-block_siblings_page_menu'
+settings:
+  id: 'views_block:group_menu-block_siblings_page_menu'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

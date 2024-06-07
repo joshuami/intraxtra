@@ -1,0 +1,29 @@
+From dac42e0655224ad762d1ed356a93f25163988c7f Mon Sep 17 00:00:00 2001
+From: Kristiaan Van den Eynde <kristiaan@factorial.io>
+Date: Wed, 13 Mar 2024 11:10:22 +0100
+Subject: [PATCH] Remove now obsolete local task (tab)
+
+---
+ group.links.task.yml | 6 ------
+ 1 file changed, 6 deletions(-)
+
+diff --git a/group.links.task.yml b/group.links.task.yml
+index f928414c..baf045b0 100644
+--- a/group.links.task.yml
++++ b/group.links.task.yml
+@@ -41,12 +41,6 @@ group.content:
+   route_name: 'entity.group_relationship.collection'
+   weight: 15
+ 
+-group.version_history:
+-  title: 'Revisions'
+-  base_route: 'entity.group.canonical'
+-  route_name: 'entity.group.version_history'
+-  weight: 20
+-
+ group_type.edit_form:
+   title: 'Edit'
+   base_route: 'entity.group_type.edit_form'
+-- 
+GitLab
+

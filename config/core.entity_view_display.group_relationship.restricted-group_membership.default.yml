@@ -1,0 +1,23 @@
+uuid: df3f986d-6dc3-41b6-9e23-9e8caaa2e231
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.restricted-group_membership.group_roles
+    - group.relationship_type.restricted-group_membership
+id: group_relationship.restricted-group_membership.default
+targetEntityType: group_relationship
+bundle: restricted-group_membership
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  uid: true

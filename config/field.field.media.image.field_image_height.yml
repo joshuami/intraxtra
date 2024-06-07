@@ -1,0 +1,23 @@
+uuid: a4ee8978-d2d5-46d2-bf0c-f0edf52efc5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_image_height
+    - media.type.image
+id: media.image.field_image_height
+field_name: field_image_height
+entity_type: media
+bundle: image
+label: 'Image height'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

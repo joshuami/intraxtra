@@ -1,0 +1,18 @@
+uuid: f3663536-5210-47ec-9503-0c44e18f3d90
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+id: group.open.label
+field_name: label
+entity_type: group
+bundle: open
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

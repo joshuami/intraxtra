@@ -1,0 +1,23 @@
+uuid: 4265e026-3a60-4b15-86ed-c8c01d970f5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.group_relationship.open-group_membership.group_roles
+    - group.relationship_type.open-group_membership
+id: group_relationship.open-group_membership.default
+targetEntityType: group_relationship
+bundle: open-group_membership
+mode: default
+content:
+  group_roles:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: -4
+    region: content
+hidden:
+  entity_id: true
+  uid: true

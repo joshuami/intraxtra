@@ -1,0 +1,12 @@
+uuid: 8a70f868-d257-4952-9737-11c3dad239dd
+langcode: en
+status: true
+dependencies:
+  module:
+    - toolbar
+id: publisher
+label: Publisher
+weight: -7
+is_admin: null
+permissions:
+  - 'access toolbar'

@@ -1,0 +1,11 @@
+uuid: b44468de-cf11-4857-b16f-94609c15318b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.narrow_width
+label: 'Narrow width'
+description: ''
+targetEntityType: media
+cache: true

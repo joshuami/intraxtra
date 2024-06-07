@@ -1,0 +1,22 @@
+{% set alert_uid = node.id  ~ '-' ~ node.changed.value|date("U") %}
+
+<div id="alert-{{ alert_uid }}" class="container-fluid alert-item">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="alert alert-dismissible d-md-flex align-items-center fade show" role="alert">
+					<div class="alert-icon pb-1 pb-md-0">
+						<i class="fa-light fa-triangle-exclamation"></i>
+					</div>
+					<div>
+						<div>
+							<strong>{{ label }}</strong>
+						</div>
+						<div>{{ content.field_alert_body }}</div>
+					</div>
+					<a data-alert="alert-{{ alert_uid }}" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

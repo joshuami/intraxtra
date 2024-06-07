@@ -1,0 +1,18 @@
+uuid: 20ec4265-cb3d-4007-b12d-af92d551084c
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+    - media.type.image
+  module:
+    - groupmedia
+    - media
+id: open-group_media-image
+group_type: open
+content_plugin: 'group_media:image'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false
+  tracking_enabled: 1

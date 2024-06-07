@@ -1,0 +1,15 @@
+uuid: bb245612-cfa9-477b-8843-6ec871d86626
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.restricted
+    - user.role.administrator
+id: restricted-admin_in
+label: Administrator
+weight: 102
+admin: true
+scope: insider
+global_role: administrator
+group_type: restricted
+permissions: {  }

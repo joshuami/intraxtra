@@ -1,0 +1,17 @@
+uuid: fea81ed8-924b-4511-89e6-8d4b684aa049
+langcode: en
+status: true
+dependencies:
+  config:
+    - group.type.open
+    - node.type.notification
+  module:
+    - gnode
+    - node
+id: open-group_node-notification
+group_type: open
+content_plugin: 'group_node:notification'
+plugin_config:
+  group_cardinality: 1
+  entity_cardinality: 1
+  use_creation_wizard: false

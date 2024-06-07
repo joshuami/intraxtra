@@ -1,0 +1,43 @@
+uuid: b2b4c819-972b-4798-988b-f7b9c35d87d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_image
+    - field.field.user.user.field_telephone
+  module:
+    - telephone
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: narrow_width
+      link: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_telephone:
+    type: telephone_link
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  masquerade:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

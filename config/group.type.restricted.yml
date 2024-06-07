@@ -1,0 +1,12 @@
+uuid: 4bde8972-e0f0-44dc-a418-274395da1eb8
+langcode: en
+status: true
+dependencies: {  }
+id: restricted
+label: Restricted
+description: 'Private groups are restricted to members and administered by a group manager.'
+new_revision: true
+creator_membership: true
+creator_wizard: true
+creator_roles:
+  - restricted-admin

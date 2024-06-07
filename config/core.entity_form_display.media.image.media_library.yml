@@ -1,0 +1,46 @@
+uuid: 7e0709e5-e43e-4b5e-87af-4ff9a6df9118
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.image.field_file_size
+    - field.field.media.image.field_group
+    - field.field.media.image.field_image_height
+    - field.field.media.image.field_image_width
+    - field.field.media.image.field_media_image
+    - field.field.media.image.field_mime_type
+    - field.field.media.image.field_show_media_in_library
+    - image.style.thumbnail
+    - media.type.image
+  module:
+    - image
+id: media.image.media_library
+targetEntityType: media
+bundle: image
+mode: media_library
+content:
+  field_media_image:
+    type: image_image
+    weight: -50
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_file_size: true
+  field_group: true
+  field_image_height: true
+  field_image_width: true
+  field_mime_type: true
+  field_show_media_in_library: true
+  name: true
+  path: true
+  publish_on: true
+  publish_state: true
+  status: true
+  uid: true
+  unpublish_on: true
+  unpublish_state: true

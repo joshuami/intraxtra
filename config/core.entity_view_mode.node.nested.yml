@@ -1,0 +1,11 @@
+uuid: b0a6cdd4-09b9-486d-a206-e1595bf33a71
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.nested
+label: Nested
+description: 'Shows content nested with child content for menu structures.'
+targetEntityType: node
+cache: true

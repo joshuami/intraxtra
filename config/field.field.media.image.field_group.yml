@@ -1,0 +1,27 @@
+uuid: 22ce73dd-7536-4b71-928d-bef2e6bca078
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_group
+    - media.type.image
+id: media.image.field_group
+field_name: field_group
+entity_type: media
+bundle: image
+label: 'Display in'
+description: 'Choose the group for this media.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:group'
+  handler_settings:
+    target_bundles: {  }
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: null
+field_type: entity_reference

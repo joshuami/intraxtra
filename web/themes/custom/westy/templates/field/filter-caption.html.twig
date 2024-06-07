@@ -1,0 +1,16 @@
+{#
+/**
+ * @file
+ * Override of Radix filter caption to output a figure.
+ */
+#}
+{% include '@westy/figure/figure.twig' with {
+  image: node,
+  caption: caption,
+  utility_classes: classes|split(' '),
+} %}
+
+{# <figure role="group" {%- if classes %} class="{{ classes }}" {%- endif %}>
+	{{ node }}
+	<figcaption>{{ caption }}</figcaption>
+</figure> #}
