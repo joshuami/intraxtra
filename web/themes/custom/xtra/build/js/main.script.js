@@ -8238,19 +8238,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./components/accordion/accrodion.scss":
-/*!*********************************************!*\
-  !*** ./components/accordion/accrodion.scss ***!
-  \*********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
 /***/ "./components/offcanvas/_offcanvas.scss":
 /*!**********************************************!*\
   !*** ./components/offcanvas/_offcanvas.scss ***!
@@ -8406,7 +8393,6 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			"components/page/page": 0,
 /******/ 			"components/page-content/page-content": 0,
 /******/ 			"components/offcanvas/_offcanvas": 0,
-/******/ 			"components/accordion/accrodion": 0,
 /******/ 			"build/css/main.style": 0,
 /******/ 			"components/region/region": 0
 /******/ 		};
@@ -8460,13 +8446,12 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","components/accordion/accrodion","build/css/main.style","components/region/region"], function() { return __webpack_require__("./src/js/main.script.js"); })
-/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","components/accordion/accrodion","build/css/main.style","components/region/region"], function() { return __webpack_require__("./src/scss/main.style.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","components/accordion/accrodion","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/accordion/accrodion.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","components/accordion/accrodion","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/offcanvas/_offcanvas.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","components/accordion/accrodion","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/page-content/page-content.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","components/accordion/accrodion","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/page/page.scss"); })
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","components/accordion/accrodion","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/region/region.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","build/css/main.style","components/region/region"], function() { return __webpack_require__("./src/js/main.script.js"); })
+/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","build/css/main.style","components/region/region"], function() { return __webpack_require__("./src/scss/main.style.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/offcanvas/_offcanvas.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/page-content/page-content.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/page/page.scss"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["components/page/page","components/page-content/page-content","components/offcanvas/_offcanvas","build/css/main.style","components/region/region"], function() { return __webpack_require__("./components/region/region.scss"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

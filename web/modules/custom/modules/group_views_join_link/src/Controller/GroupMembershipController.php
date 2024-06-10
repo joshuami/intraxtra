@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\group_entity_reference\Controller;
+namespace Drupal\group_views_join_link\Controller;
 
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Entity\EntityFormBuilderInterface;

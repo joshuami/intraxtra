@@ -2,6 +2,8 @@ uuid: 01b0a8f6-9f2f-4d2a-899e-e8db8ff2f3d5
 langcode: en
 status: true
 dependencies:
+  config:
+    - system.menu.main
   module:
     - group
     - group_views_join_link
@@ -220,6 +222,15 @@ display:
     display_options:
       display_extenders: {  }
       path: groups
+      menu:
+        type: normal
+        title: Groups
+        description: ''
+        weight: 1
+        expanded: false
+        menu_name: main
+        parent: ''
+        context: '0'
     cache_metadata:
       max-age: -1
       contexts:

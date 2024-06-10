@@ -1,0 +1,8 @@
+entity.group.follow:
+  path: '/group/{group}/follow'
+  defaults:
+    _controller: '\Drupal\group_views_join_link\Controller\GroupMembershipController::follow'
+    _title_callback: '\Drupal\group_views_join_link\Controller\GroupMembershipController::followTitle'
+  requirements:
+    _group_permission: 'join group'
+    _group_member: 'FALSE'

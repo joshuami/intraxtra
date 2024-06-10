@@ -22,8 +22,17 @@ props:
         - h5
         - h6
       default: h2
+    title_link:
+      type: string
+      title: Title Link
+      description: URL for the title link.
+      default: ''
+    title_attributes:
+      type: Drupal\Core\Template\Attribute
+      title: Attributes
+      description: A list of HTML attributes for the button.
     id:
-      type: integer
+      type: ['integer', 'string']
       title: ID
       description: Unique ID for the accordion component.
       default: 0
@@ -42,8 +51,29 @@ props:
       title: Open Item ID
       description: The index of the item that should be opened by default.
       default: 0
+    accordion_utility_classes:
+      type: array
+      items:
+        type: string
+      title: Accordion Utility Classes
+      default: []
+      description: An array of utility classes. Use to add extra Bootstrap utility classes or custom CSS classes over to this component.
+    accordion_item_utility_classes:
+      type: array
+      items:
+        type: string
+      title: Accordion Item Utility Classes
+      default: []
+      description: An array of utility classes. Use to add extra Bootstrap utility classes or custom CSS classes over to this component.
+    accordion_attributes:
+      type: Drupal\Core\Template\Attribute
+      title: Attributes
+      description: A list of HTML attributes for the accordion.
+    accordion_item_attributes:
+      type: Drupal\Core\Template\Attribute
+      title: Item Attributes
+      description: A list of HTML attributes for the accordion items.
 slots:
   content:
-    type: string
     title: Content
     description: Default content text for the accordion.

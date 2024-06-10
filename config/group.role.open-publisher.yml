@@ -4,12 +4,70 @@ status: true
 dependencies:
   config:
     - group.type.open
-    - user.role.publisher
 id: open-publisher
 label: Publisher
 weight: -6
 admin: false
-scope: insider
-global_role: publisher
+scope: individual
+global_role: null
 group_type: open
-permissions: {  }
+permissions:
+  - 'access group_media overview'
+  - 'access group_node overview'
+  - 'create group_media:document entity'
+  - 'create group_media:image entity'
+  - 'create group_node:event entity'
+  - 'create group_node:page entity'
+  - 'create group_node:post entity'
+  - 'delete own group_media:document entity'
+  - 'delete own group_media:image entity'
+  - 'delete own group_node:event entity'
+  - 'delete own group_node:page entity'
+  - 'delete own group_node:post entity'
+  - 'revert group revisions'
+  - 'revert group_media:document entity revisions'
+  - 'revert group_media:image entity revisions'
+  - 'revert group_node:event entity revisions'
+  - 'revert group_node:page entity revisions'
+  - 'revert group_node:post entity revisions'
+  - 'update any group_media:document entity'
+  - 'update any group_media:image entity'
+  - 'update any group_node:event entity'
+  - 'update any group_node:page entity'
+  - 'update any group_node:post entity'
+  - 'update own group_media:document entity'
+  - 'update own group_media:image entity'
+  - 'update own group_node:event entity'
+  - 'update own group_node:page entity'
+  - 'update own group_node:post entity'
+  - 'view all group revisions'
+  - 'view all group_media:document entity revisions'
+  - 'view all group_media:image entity revisions'
+  - 'view all group_node:event entity revisions'
+  - 'view all group_node:page entity revisions'
+  - 'view all group_node:post entity revisions'
+  - 'view group'
+  - 'view group revisions'
+  - 'view group_media:document entity'
+  - 'view group_media:document entity revisions'
+  - 'view group_media:image entity'
+  - 'view group_media:image entity revisions'
+  - 'view group_membership relationship'
+  - 'view group_node:event entity'
+  - 'view group_node:event entity revisions'
+  - 'view group_node:notification entity'
+  - 'view group_node:page entity'
+  - 'view group_node:page entity revisions'
+  - 'view group_node:post entity'
+  - 'view group_node:post entity revisions'
+  - 'view latest group version'
+  - 'view own unpublished group_media:document entity'
+  - 'view own unpublished group_media:image entity'
+  - 'view own unpublished group_node:event entity'
+  - 'view own unpublished group_node:page entity'
+  - 'view own unpublished group_node:post entity'
+  - 'view unpublished group_media:document entity'
+  - 'view unpublished group_media:image entity'
+  - 'view unpublished group_node:event entity'
+  - 'view unpublished group_node:page entity'
+  - 'view unpublished group_node:post entity'
