@@ -12,7 +12,7 @@ dependencies:
 id: xtra_views_block__group_menu_block_group_frontpage_menu
 theme: xtra
 region: sidebar
-weight: 0
+weight: -1
 provider: null
 plugin: 'views_block:group_menu-block_group_frontpage_menu'
 settings:

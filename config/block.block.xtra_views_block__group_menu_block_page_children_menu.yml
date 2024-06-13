@@ -11,7 +11,7 @@ dependencies:
 id: xtra_views_block__group_menu_block_page_children_menu
 theme: xtra
 region: sidebar
-weight: 0
+weight: -4
 provider: null
 plugin: 'views_block:group_menu-block_page_children_menu'
 settings:
