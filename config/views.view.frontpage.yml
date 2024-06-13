@@ -1,6 +1,6 @@
 uuid: aac61e0e-e627-49b4-be0a-96a0132644ba
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - core.entity_view_mode.node.rss
@@ -293,7 +293,20 @@ display:
       use_more: false
       use_more_always: false
       use_more_text: 'more news'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<h2>News</h2>'
+            format: full_html
+          tokenize: true
       footer:
         area:
           id: area
@@ -305,8 +318,8 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/news">More news</a>'
-            format: basic_html
+            value: "<div class=\"row align-items-center mb-2\">\r\n  <div class=\"col-4 w-auto ms-auto\"><a class=\"text-decoration-none\" href=\"/news\">All news &raquo;</a></div>\r\n</div>"
+            format: full_html
           tokenize: false
       display_extenders: {  }
     cache_metadata:
@@ -395,7 +408,7 @@ display:
       defaults:
         title: false
       display_extenders: {  }
-      path: front
+      path: node
       menu:
         type: normal
         title: Home

@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.post.field_summary
     - node.type.post
   module:
+    - smart_date
     - user
 id: node.post.teaser
 targetEntityType: node
@@ -23,26 +24,30 @@ content:
     weight: 1
     region: content
   published_at:
-    type: timestamp
-    label: inline
+    type: smartdate_default
+    label: visually_hidden
     settings:
-      date_format: medium
-      custom_date_format: ''
-      timezone: ''
-      tooltip:
-        date_format: long
-        custom_date_format: ''
-      time_diff:
-        enabled: false
-        future_format: '@interval hence'
-        past_format: '@interval ago'
-        granularity: 2
-        refresh: 60
+      timezone_override: ''
+      format_type: medium
+      format: default
+      force_chronological: false
+      add_classes: false
+      time_wrapper: true
+      localize: false
+      parts:
+        - start
+        - end
+      duration:
+        separator: ' | '
+        unit: ''
+        decimals: 2
+        suffix: h
     third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   body: true
+  content_moderation_control: true
   field_group: true
   links: true
   toc_js: true

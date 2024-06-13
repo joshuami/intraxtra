@@ -17,7 +17,7 @@ third_party_settings:
     publish_enable: true
     publish_past_date: error
     publish_past_date_created: false
-    publish_required: true
+    publish_required: false
     publish_revision: true
     publish_touch: false
     show_message_after_update: true
