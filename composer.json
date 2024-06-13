@@ -54,7 +54,9 @@
         "npm-asset/drag-check-js": "^2.0",
         "oomphinc/composer-installers-extender": "^2.0",
         "drupal/fontawesome": "^2.26",
-        "wikimedia/composer-merge-plugin": "^2.1"
+        "wikimedia/composer-merge-plugin": "^2.1",
+        "drupal/show_email": "^1.2",
+        "drupal/menu_breadcrumb": "^2.0@alpha"
     },
     "require-dev": {
         "drupal/core-dev": "^10",
