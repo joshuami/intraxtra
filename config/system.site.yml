@@ -8,7 +8,7 @@ slogan: 'A demonstration of a collaborative platform for intranets and extranets
 page:
   403: ''
   404: ''
-  front: /front
+  front: /node
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en

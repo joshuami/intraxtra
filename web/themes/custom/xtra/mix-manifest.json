@@ -1,9 +1,12 @@
 {
     "/build/js/main.script.js": "/build/js/main.script.js",
-    "/components/page/page.css": "/components/page/page.css",
-    "/components/page-content/page-content.css": "/components/page-content/page-content.css",
     "/components/offcanvas/_offcanvas.css": "/components/offcanvas/_offcanvas.css",
-    "/components/accordion/accrodion.css": "/components/accordion/accrodion.css",
+    "/components/navbar-brand/navbar-brand.css": "/components/navbar-brand/navbar-brand.css",
+    "/components/field/field.css": "/components/field/field.css",
+    "/components/accordion/accordion.css": "/components/accordion/accordion.css",
     "/build/css/main.style.css": "/build/css/main.style.css",
-    "/components/region/region.css": "/components/region/region.css"
+    "/components/user/user.css": "/components/user/user.css",
+    "/components/region/region.css": "/components/region/region.css",
+    "/components/page/page.css": "/components/page/page.css",
+    "/components/page-content/page-content.css": "/components/page-content/page-content.css"
 }
