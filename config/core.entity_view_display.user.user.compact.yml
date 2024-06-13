@@ -6,15 +6,50 @@ dependencies:
     - core.entity_view_mode.user.compact
     - field.field.user.user.field_image
     - field.field.user.user.field_telephone
+    - image.style.thumbnail
   module:
+    - media
+    - show_email
+    - telephone
     - user
 id: user.user.compact
 targetEntityType: user
 bundle: user
 mode: compact
-content: {  }
+content:
+  field_image:
+    type: media_thumbnail
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_telephone:
+    type: telephone_link
+    label: inline
+    settings:
+      title: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  mail:
+    type: show_email_address
+    label: inline
+    settings:
+      hide_user_one: '1'
+      email_mailto: '1'
+      hide_per_role:
+        authenticated: 0
+        contributor: 0
+        publisher: 0
+        administrator: 0
+    third_party_settings: {  }
+    weight: 1
+    region: content
 hidden:
-  field_image: true
-  field_telephone: true
   masquerade: true
   member_for: true

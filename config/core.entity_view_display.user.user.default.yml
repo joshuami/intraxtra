@@ -6,6 +6,8 @@ dependencies:
     - field.field.user.user.field_image
     - field.field.user.user.field_telephone
   module:
+    - media
+    - show_email
     - telephone
     - user
 id: user.user.default
@@ -14,11 +16,13 @@ bundle: user
 mode: default
 content:
   field_image:
-    type: entity_reference_entity_view
+    type: media_thumbnail
     label: hidden
     settings:
-      view_mode: narrow_width
-      link: false
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content
@@ -28,16 +32,30 @@ content:
     settings:
       title: ''
     third_party_settings: {  }
+    weight: 2
+    region: content
+  mail:
+    type: show_email_address
+    label: inline
+    settings:
+      hide_user_one: '1'
+      email_mailto: 0
+      hide_per_role:
+        authenticated: 0
+        contributor: 0
+        publisher: 0
+        administrator: 0
+    third_party_settings: {  }
     weight: 1
     region: content
   masquerade:
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   member_for:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden: {  }
