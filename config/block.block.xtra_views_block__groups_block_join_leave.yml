@@ -1,43 +1,34 @@
-uuid: 74a49ecd-bd87-45ed-a947-d78097de08b4
+uuid: 27a345ff-f97f-4f63-8297-ac7acfe42f4b
 langcode: en
 status: true
 dependencies:
   config:
-    - views.view.group_menu
+    - views.view.groups
   module:
     - group
     - system
     - views
   theme:
     - xtra
-id: xtra_views_block__group_menu_block_group_frontpage_menu
+id: xtra_views_block__groups_block_join_leave
 theme: xtra
 region: sidebar
-weight: -1
+weight: -5
 provider: null
-plugin: 'views_block:group_menu-block_group_frontpage_menu'
+plugin: 'views_block:groups-block_join_leave'
 settings:
-  id: 'views_block:group_menu-block_group_frontpage_menu'
+  id: 'views_block:groups-block_join_leave'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   context_mapping: {  }
   views_label: ''
   items_per_page: none
 visibility:
-  'entity_bundle:group':
-    id: 'entity_bundle:group'
-    negate: false
-    context_mapping:
-      group: '@group.group_route_context:group'
-    bundles:
-      open: open
-      restricted: restricted
   group_type:
     id: group_type
     group_types:
       open: open
-      restricted: restricted
     negate: false
     context_mapping:
       group: '@group.group_route_context:group'
