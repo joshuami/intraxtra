@@ -49,7 +49,7 @@ third_party_settings:
 name: Post
 type: post
 description: 'Use a post for chronological content such as news, blog posts, and annoucements.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

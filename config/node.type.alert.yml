@@ -49,7 +49,7 @@ third_party_settings:
 name: Alert
 type: alert
 description: 'Use alerts for announcements that should appear sitewide as a banner.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

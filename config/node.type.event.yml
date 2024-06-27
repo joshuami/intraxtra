@@ -49,7 +49,7 @@ third_party_settings:
 name: Event
 type: event
 description: 'Use events for chronological content that is happening on a specific date or time.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false

@@ -49,7 +49,7 @@ third_party_settings:
 name: Notification
 type: notification
 description: 'Use notifications to display announcements on all pages within a group.'
-help: ''
+help: null
 new_revision: true
 preview_mode: 1
 display_submitted: false
