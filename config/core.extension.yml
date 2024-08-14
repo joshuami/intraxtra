@@ -2,10 +2,6 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   actions_permissions: 0
-  admin_toolbar: 0
-  admin_toolbar_links_access_filter: 0
-  admin_toolbar_search: 0
-  admin_toolbar_tools: 0
   anonymous_login: 0
   automated_cron: 0
   big_pipe: 0
@@ -31,7 +27,6 @@ module:
   file: 0
   filter: 0
   flexible_permissions: 0
-  fontawesome: 0
   gnode: 0
   group: 0
   group_entity_reference: 0
@@ -54,6 +49,7 @@ module:
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
+  navigation: 0
   node: 0
   options: 0
   page_cache: 0
@@ -82,7 +78,6 @@ module:
   toc_js_per_node: 0
   token: 0
   toolbar: 0
-  twbstools: 0
   twig_tweak: 0
   update: 0
   user: 0
@@ -100,6 +95,5 @@ theme:
   claro: 0
   stable9: 0
   radix: 0
-  gin: 0
   xtra: 0
 profile: minimal

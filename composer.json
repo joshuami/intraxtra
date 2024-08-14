@@ -25,7 +25,7 @@
         "pantheon-systems/drupal-integrations": "^10",
         "cweagans/composer-patches": "^1.7",
         "drush/drush": "^11 || ^12",
-        "bower-asset/toc": "^2.1",
+        "bower-asset/toc": "^0.3.2",
         "drupal/anonymous_login": "^2.1",
         "drupal/components": "^3.0@beta",
         "drupal/easy_breadcrumb": "^2.0",
@@ -43,25 +43,21 @@
         "drupal/toc_js": "^2.1",
         "drupal/webform": "^6.2",
         "drupal/views_bulk_operations": "^4.2",
-        "drupal/gin_toolbar": "^1.0@RC",
-        "drupal/gin": "^3.0@RC",
         "drupal/admin_toolbar": "^3.4",
         "drupal/publication_date": "^2.0@beta",
-        "drupal/twbstools": "^2.0@dev",
         "drupal/twig_tweak": "^3.3",
         "drupal/radix": "^6.0@beta",
         "drupal/permissions_dragcheck": "^2.0",
         "npm-asset/drag-check-js": "^2.0",
         "oomphinc/composer-installers-extender": "^2.0",
-        "drupal/fontawesome": "^2.26",
         "wikimedia/composer-merge-plugin": "^2.1",
         "drupal/show_email": "^1.2",
-        "drupal/menu_breadcrumb": "^2.0@alpha"
+        "drupal/menu_breadcrumb": "^2.0@alpha",
+        "drupal/masquerade": "^2.0"
     },
     "require-dev": {
         "drupal/core-dev": "^10",
-        "drupal/devel": "^5.1",
-        "drupal/masquerade": "^2.0@RC"
+        "drupal/devel": "^5.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -104,6 +100,9 @@
         "patches": {
             "drupal/group": {
                 "Groups have two revision tabs.": "patches/3397063-group-has-two-revision-tabs.patch"
+            },
+            "drupal/scheduler_content_moderation_integration": {
+                "3447226: update patch for moderated terms.": "patches/3447266-scheduler-content-moderation-update-path-for-moderated-terms.patch"
             }
         },
         "merge-plugin": {

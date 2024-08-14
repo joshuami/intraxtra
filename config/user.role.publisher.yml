@@ -2,13 +2,39 @@ uuid: 8a70f868-d257-4952-9737-11c3dad239dd
 langcode: en
 status: true
 dependencies:
+  config:
+    - workflows.workflow.editorial
   module:
+    - content_moderation
+    - navigation
+    - quick_node_clone
+    - scheduler
+    - system
     - toolbar
 id: publisher
 label: Publisher
 weight: -7
 is_admin: null
 permissions:
+  - 'access navigation'
   - 'access toolbar'
   - 'access user profiles'
+  - 'clone event content'
+  - 'clone notification content'
+  - 'clone page content'
+  - 'clone post content'
+  - 'schedule publishing of media'
+  - 'schedule publishing of nodes'
+  - 'schedule publishing of taxonomy_term'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition mark_for_deletion'
+  - 'use editorial transition mark_for_review'
+  - 'use editorial transition publish'
+  - 'use editorial transition unpublish'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view scheduled content'
+  - 'view scheduled media'
+  - 'view scheduled taxonomy_term'
+  - 'view the administration theme'
   - 'view user email addresses'

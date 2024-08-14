@@ -1,11 +1,31 @@
 uuid: 657dd52b-2d7b-4456-8fc4-e538639be2c4
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - navigation
+    - quick_node_clone
+    - system
+    - toolbar
 id: contributor
 label: Contributor
 weight: -8
 is_admin: null
 permissions:
+  - 'access navigation'
+  - 'access toolbar'
   - 'access user profiles'
+  - 'clone event content'
+  - 'clone notification content'
+  - 'clone page content'
+  - 'clone post content'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition mark_for_deletion'
+  - 'use editorial transition mark_for_review'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view the administration theme'
   - 'view user email addresses'
