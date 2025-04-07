@@ -30,7 +30,7 @@
         "drupal/components": "^3.0@beta",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/eva": "^3.0",
-        "drupal/group": "^3.2",
+        "drupal/group": "^3.3",
         "drupal/groupmedia": "^4.0",
         "drupal/media_entity_download": "^2.2",
         "drupal/pathauto": "^1.12",
@@ -53,7 +53,8 @@
         "wikimedia/composer-merge-plugin": "^2.1",
         "drupal/show_email": "^1.2",
         "drupal/menu_breadcrumb": "^2.0@alpha",
-        "drupal/masquerade": "^2.0"
+        "drupal/masquerade": "^2.0",
+        "drupal/variationcache": "^1.5"
     },
     "require-dev": {
         "drupal/core-dev": "^10",
@@ -98,9 +99,6 @@
         },
         "enable-patching": true,
         "patches": {
-            "drupal/group": {
-                "Groups have two revision tabs.": "patches/3397063-group-has-two-revision-tabs.patch"
-            },
             "drupal/scheduler_content_moderation_integration": {
                 "3447226: update patch for moderated terms.": "patches/3447266-scheduler-content-moderation-update-path-for-moderated-terms.patch"
             }
@@ -132,7 +130,8 @@
             "phpstan/extension-installer": true,
             "php-http/discovery": true,
             "oomphinc/composer-installers-extender": true,
-            "wikimedia/composer-merge-plugin": true
+            "wikimedia/composer-merge-plugin": true,
+            "tbachert/spi": true
         }
     }
 }
