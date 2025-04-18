@@ -12,6 +12,7 @@ dependencies:
   module:
     - file
     - path
+    - scheduler
     - scheduler_content_moderation_integration
 id: media.document.default
 targetEntityType: media
@@ -33,7 +34,7 @@ content:
     third_party_settings: {  }
   field_group:
     type: entity_reference_autocomplete
-    weight: 54
+    weight: 14
     region: content
     settings:
       match_operator: CONTAINS
@@ -78,14 +79,14 @@ content:
     settings: {  }
     third_party_settings: {  }
   publish_on:
-    type: datetime_timestamp
+    type: datetime_timestamp_no_default
     weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
   publish_state:
     type: scheduler_moderation
-    weight: 53
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -111,6 +112,16 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-hidden:
-  unpublish_on: true
-  unpublish_state: true
+  unpublish_on:
+    type: datetime_timestamp_no_default
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  unpublish_state:
+    type: options_select
+    weight: 12
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

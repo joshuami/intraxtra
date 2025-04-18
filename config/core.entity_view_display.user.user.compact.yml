@@ -9,7 +9,6 @@ dependencies:
     - image.style.thumbnail
   module:
     - media
-    - show_email
     - telephone
     - user
 id: user.user.compact
@@ -37,18 +36,11 @@ content:
     weight: 0
     region: content
   mail:
-    type: show_email_address
-    label: inline
-    settings:
-      hide_user_one: '1'
-      email_mailto: '1'
-      hide_per_role:
-        authenticated: 0
-        contributor: 0
-        publisher: 0
-        administrator: 0
+    type: basic_string
+    label: above
+    settings: {  }
     third_party_settings: {  }
-    weight: 1
+    weight: 3
     region: content
 hidden:
   masquerade: true

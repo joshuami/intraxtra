@@ -1,0 +1,27 @@
+uuid: af879891-2384-428c-a924-fe671b4df4ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - group
+_core:
+  default_config_hash: 1tEtbHvVBjy2ChRMYjieiOpb_YY3pH9m3ug1UJOvWrg
+id: group_membership
+label: 'Group membership'
+type: 'canonical_entities:group_relationship'
+pattern: 'membership/[group_relationship:id]'
+selection_criteria:
+  b76a4d48-61a0-4c72-8310-25020564b2e7:
+    id: 'entity_bundle:group_relationship'
+    negate: false
+    uuid: b76a4d48-61a0-4c72-8310-25020564b2e7
+    context_mapping:
+      group_relationship: group_relationship
+    bundles:
+      open-group_membership: open-group_membership
+      restricted-group_membership: restricted-group_membership
+selection_logic: and
+weight: -8
+relationships:
+  'group_relationship:langcode:language':
+    label: Language
