@@ -26,8 +26,8 @@
         "drupal/anonymous_login": "^2.1",
         "drupal/block_exclude_pages": "^2.1",
         "drupal/components": "^3.0@beta",
-        "drupal/core-composer-scaffold": "^10",
-        "drupal/core-recommended": "^10",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-recommended": "^11",
         "drupal/easy_breadcrumb": "^2.0",
         "drupal/eva": "^3.0",
         "drupal/group": "^3.3",
@@ -49,15 +49,13 @@
         "drupal/twig_tweak": "^3.3",
         "drupal/views_bulk_operations": "^4.2",
         "drupal/webform": "^6.3@beta",
-        "drush/drush": "^11 || ^12",
+        "drush/drush": "^13.5",
         "npm-asset/drag-check-js": "^2.0",
         "oomphinc/composer-installers-extender": "^2.0",
-        "pantheon-systems/drupal-integrations": "^10",
-        "pantheon-upstreams/upstream-configuration": "dev-main",
+        "pantheon-systems/drupal-integrations": "^11.1",
         "wikimedia/composer-merge-plugin": "^2.1"
     },
     "require-dev": {
-        "drupal/core-dev": "^10",
         "drupal/devel": "^5.1"
     },
     "conflict": {
@@ -102,7 +100,7 @@
             "drupal/core": "-p2"
         },
         "enable-patching": true,
-        "patches": {},
+        "patches": [],
         "merge-plugin": {
             "include": ["web/modules/contrib/fontawesome/composer.libraries.json"]
         }
@@ -118,7 +116,7 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "platform": {
-            "php": "8.2.0"
+            "php": "8.3"
         },
         "allow-plugins": {
             "composer/installers": true,
