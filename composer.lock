@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "97fb62337a1cef5467436bc6abbd51f0",
+    "content-hash": "7a426cde0ae78a94ddbb5e8e825ee9ae",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2825,35 +2825,39 @@
         },
         {
             "name": "drupal/publication_date",
-            "version": "2.0.0-beta8",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/publication_date.git",
-                "reference": "8.x-2.0-beta8"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/publication_date-8.x-2.0-beta8.zip",
-                "reference": "8.x-2.0-beta8",
-                "shasum": "1e40fc97a4582c364a8971e16448775c30441fe7"
+                "url": "https://ftp.drupal.org/files/projects/publication_date-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "054788a5eb6b5230d6b2d2e58be08f98f44aeb83"
             },
             "require": {
-                "drupal/core": "^9.1 || ^10"
+                "drupal/core": "^10.3 || ^11"
+            },
+            "require-dev": {
+                "drupal/feeds": "^3.0",
+                "drupal/workbench_moderation": "^1.8"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.0-beta8",
-                    "datestamp": "1715850299",
+                    "version": "3.0.0",
+                    "datestamp": "1738251745",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -2890,9 +2894,10 @@
                 }
             ],
             "description": "Add a field containing the publication date.",
-            "homepage": "https://www.drupal.org/project/publication_date",
+            "homepage": "https://drupal.org/project/publication_date",
             "support": {
-                "source": "https://git.drupalcode.org/project/publication_date"
+                "source": "https://git.drupalcode.org/project/publication_date",
+                "issues": "https://drupal.org/project/issues/publication_date"
             }
         },
         {
@@ -3153,30 +3158,30 @@
         },
         {
             "name": "drupal/scheduler_content_moderation_integration",
-            "version": "2.0.0",
+            "version": "3.0.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/scheduler_content_moderation_integration.git",
-                "reference": "2.0.0"
+                "reference": "3.0.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/scheduler_content_moderation_integration-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "74d4dd546b7ce6fd5c68312d50f20c366ee8772c"
+                "url": "https://ftp.drupal.org/files/projects/scheduler_content_moderation_integration-3.0.4.zip",
+                "reference": "3.0.4",
+                "shasum": "07b57e1817c01902a5709cdcbd4578e65622ce53"
             },
             "require": {
-                "drupal/core": "^9 || ^10",
-                "drupal/scheduler": "^2"
+                "drupal/core": "^10.3 || ^11",
+                "drupal/scheduler": "^2.1"
             },
             "require-dev": {
-                "drupal/commerce": "*"
+                "drupal/commerce": "^3.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1738678266",
+                    "version": "3.0.4",
+                    "datestamp": "1738679096",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3214,58 +3219,6 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/scheduler_content_moderation_integration",
                 "error": "Invalid dependency: \"scheduler\", Could not parse version constraint ~: Invalid version string \"~\""
-            }
-        },
-        {
-            "name": "drupal/show_email",
-            "version": "1.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/show_email.git",
-                "reference": "8.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/show_email-8.x-1.2.zip",
-                "reference": "8.x-1.2",
-                "shasum": "727cd8ae7d08459ce24470bd7e740af1c37b0cc4"
-            },
-            "require": {
-                "drupal/core": "^8 || ^9 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.2",
-                    "datestamp": "1705778377",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "3ssom",
-                    "homepage": "https://www.drupal.org/user/758014"
-                },
-                {
-                    "name": "abdulaziz zaid",
-                    "homepage": "https://www.drupal.org/user/3585656"
-                },
-                {
-                    "name": "drpl",
-                    "homepage": "https://www.drupal.org/user/334568"
-                }
-            ],
-            "description": "Show registered user email address in profile page.",
-            "homepage": "https://www.drupal.org/project/show_email",
-            "support": {
-                "source": "https://git.drupalcode.org/project/show_email"
             }
         },
         {
@@ -3392,26 +3345,26 @@
         },
         {
             "name": "drupal/toc_js",
-            "version": "2.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/toc_js.git",
-                "reference": "2.1.0"
+                "reference": "3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/toc_js-2.1.0.zip",
-                "reference": "2.1.0",
-                "shasum": "75f987b29cf2f48b631efe2f51a7620d7295cb32"
+                "url": "https://ftp.drupal.org/files/projects/toc_js-3.1.1.zip",
+                "reference": "3.1.1",
+                "shasum": "1d752d2c331ab4b3a53332b6ceb6a76c3011e749"
             },
             "require": {
-                "drupal/core": "^9 || ^10"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.0",
-                    "datestamp": "1688027858",
+                    "version": "3.1.1",
+                    "datestamp": "1741455938",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3425,21 +3378,24 @@
             "authors": [
                 {
                     "name": "flocondetoile",
-                    "homepage": "https://www.drupal.org/user/2006064"
+                    "homepage": "https://www.drupal.org/u/flocondetoile",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "mably",
-                    "homepage": "https://www.drupal.org/user/3375160"
+                    "homepage": "https://www.drupal.org/u/mably",
+                    "role": "Maintainer"
                 },
                 {
                     "name": "vladimiraus",
                     "homepage": "https://www.drupal.org/user/673120"
                 }
             ],
-            "description": "Toc.js module integrate the jQuery plugin TOC.js into Drupal.",
-            "homepage": "https://drupal.org/project/toc_js",
+            "description": "The Toc.js module automatically generates tables of contents from headings on client side.",
+            "homepage": "https://www.drupal.org/project/toc_js",
             "support": {
-                "source": "https://git.drupalcode.org/project/toc_js"
+                "source": "https://git.drupalcode.org/project/toc_js",
+                "issues": "https://www.drupal.org/project/issues/toc_js"
             }
         },
         {
@@ -3575,57 +3531,6 @@
             }
         },
         {
-            "name": "drupal/variationcache",
-            "version": "1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/variationcache.git",
-                "reference": "8.x-1.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/variationcache-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "6165baee8c6fe5a7773f3499896e8fb464607a32"
-            },
-            "require": {
-                "drupal/core": "^9.5 || ^10"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1705485386",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Kristiaan Van den Eynde",
-                    "homepage": "https://www.drupal.org/u/kristiaanvandeneynde",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Brad Jones",
-                    "homepage": "https://www.drupal.org/u/bradjones1",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "This project provides VariationCache, a redirect-aware caching implementation.",
-            "homepage": "http://drupal.org/project/variationcache",
-            "support": {
-                "source": "https://git.drupalcode.org/project/variationcache",
-                "issues": "https://drupal.org/project/issues/variationcache"
-            }
-        },
-        {
             "name": "drupal/views_bulk_operations",
             "version": "4.3.4",
             "source": {
@@ -3690,48 +3595,43 @@
         },
         {
             "name": "drupal/webform",
-            "version": "6.2.9",
+            "version": "6.3.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webform.git",
-                "reference": "6.2.9"
+                "reference": "6.3.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webform-6.2.9.zip",
-                "reference": "6.2.9",
-                "shasum": "650752c3cc6d0144c6f378b8d25d45c083e23600"
+                "url": "https://ftp.drupal.org/files/projects/webform-6.3.0-beta2.zip",
+                "reference": "6.3.0-beta2",
+                "shasum": "02e45bf3716c6e81846a9b77837782a43053e6f9"
             },
             "require": {
-                "drupal/core": "^10.2",
-                "php": ">=8.1"
+                "drupal/core": "^10.3 || ^11.0"
             },
             "require-dev": {
-                "drupal/address": "1.x-dev",
-                "drupal/bootstrap": "3.x-dev",
-                "drupal/captcha": "^1 || ^2",
-                "drupal/chosen": "3.0.x-dev",
-                "drupal/ckeditor": "1.0.x-dev",
-                "drupal/clientside_validation": "^3 || ^4",
+                "drupal/address": "^2.0",
+                "drupal/captcha": "^2.0",
+                "drupal/chosen": "^4.0",
+                "drupal/clientside_validation": "^4.1",
                 "drupal/clientside_validation_jquery": "*",
-                "drupal/devel": "5.x-dev",
-                "drupal/entity": "1.x-dev",
-                "drupal/entity_print": "2.x-dev",
-                "drupal/group": "1.x-dev",
-                "drupal/hal": "1 - 2",
-                "drupal/jquery_ui": "1.x-dev",
-                "drupal/jquery_ui_button": "2.x-dev",
-                "drupal/jquery_ui_checkboxradio": "2.x-dev",
-                "drupal/jquery_ui_datepicker": "2.x-dev",
-                "drupal/mailsystem": "4.x-dev",
-                "drupal/metatag": "1.x-dev",
-                "drupal/paragraphs": "1.x-dev",
+                "drupal/devel": "^5.3",
+                "drupal/entity": "^1.5",
+                "drupal/entity_print": "^2.15",
+                "drupal/hal": "^2.0",
+                "drupal/jquery_ui": "^1.7",
+                "drupal/jquery_ui_button": "^2.1",
+                "drupal/jquery_ui_checkboxradio": "^2.1",
+                "drupal/jquery_ui_datepicker": "^2.1",
+                "drupal/mailsystem": "^4.5",
+                "drupal/metatag": "^2.0",
+                "drupal/paragraphs": "^1.18",
                 "drupal/select2": "1.x-dev",
-                "drupal/smtp": "1.x-dev",
-                "drupal/styleguide": "^1 || ^2",
+                "drupal/smtp": "^1.4",
+                "drupal/styleguide": "^2.1",
                 "drupal/telephone_validation": "2.x-dev",
-                "drupal/token": "1.x-dev",
-                "drupal/variationcache": "1.x-dev",
+                "drupal/token": "^1.15",
                 "drupal/webform_access": "*",
                 "drupal/webform_attachment": "*",
                 "drupal/webform_clientside_validation": "*",
@@ -3750,16 +3650,16 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "6.2.9",
-                    "datestamp": "1733851063",
+                    "version": "6.3.0-beta2",
+                    "datestamp": "1742582977",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": ">=9"
+                        "drush.services.yml": ">=11"
                     }
                 }
             },
@@ -14583,9 +14483,8 @@
     "stability-flags": {
         "drupal/components": 10,
         "drupal/menu_breadcrumb": 15,
-        "drupal/publication_date": 10,
         "drupal/radix": 10,
-        "drupal/scheduler_content_moderation_integration": 10,
+        "drupal/webform": 10,
         "pantheon-upstreams/upstream-configuration": 20
     },
     "prefer-stable": true,
